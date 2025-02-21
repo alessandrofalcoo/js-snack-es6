@@ -61,39 +61,22 @@ const teams = [
         fouls: 0
     },
 ]
+const namesFouls = [];
 
 
 // Itero sull'array di oggetti in modo da ottenere un numero random nelle proprietà dei punti e dei falli
 for (let i = 0; i < teams.length; i++) {
     teams[i].points = Math.floor(Math.random() * 10) + 1;
     teams[i].fouls = Math.floor(Math.random() * 10) + 1;
+    let nameFoul = {
+        name: teams[i].name,
+        fouls: teams[i].fouls
+    }
+    namesFouls.push(nameFoul);
 }
-// Stampo l'array in console
+// Stampo gli array in console
 console.log(teams);
-
-
-// Creo un array di oggetti con dentro solo due proprietà
-const namesFouls = [
-    {
-        name:'Inter',
-        fouls: 0        
-    },
-    {
-        name:'Milan',
-        fouls: 0        
-    },
-    {
-        name:'Roma',
-        fouls: 0        
-    },
-]
-
-// Itero sull'array in modo da generare un numero random nella fouls property
-for (let i = 0; i < namesFouls.length; i++) {
-    namesFouls[i].fouls = Math.floor(Math.random() * 10) + 1;
-}
-
-// Stampo l'array in console
 console.log(namesFouls);
+
 
 
