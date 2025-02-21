@@ -18,7 +18,11 @@ const bikes = [
     },
 ]
 
-
+let lighterBike;
+for (let i = 0; i < bikes.length; i++) {
+    const thisBike = bikes[i];
+    
+}
 
 
 
