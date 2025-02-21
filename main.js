@@ -63,12 +63,19 @@ const teams = [
 ]
 
 for (let i = 0; i < teams.length; i++) {
-    let point = teams[i].points;
-    let foul = teams[i].fouls;
-    point = Math.floor(Math.random() * 10) + 1;
-    foul = Math.floor(Math.random() * 10) + 1;
-    const namesFouls = [foul];
-    console.log(namesFouls);
+    teams[i].points = Math.floor(Math.random() * 10) + 1;
+    teams[i].fouls = Math.floor(Math.random() * 10) + 1;
+    console.log(teams[i].points);
+    console.log(teams[i].fouls);
+
     
 }
+const namesFouls = [];
+for (let i = 0; i < teams.length; i++) {
+    let foul = teams[i].fouls;
+    let names = teams[i].name;
+    namesFouls.push(foul, names)
+}
+console.log(namesFouls);
+
 
