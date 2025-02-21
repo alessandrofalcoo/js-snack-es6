@@ -19,9 +19,7 @@ const bikes = [
 ]
 
 // Creare una array che contenga la bici più leggera
-let lighterBike = [];
-lighterBike.push(bikes[0]);
-
+let lighterBike = [bikes[0]];
 
 // Controllare i vari pesi e pushare nella variabile ligtherBike la bici col peso minore
 for (let i = 1; i < bikes.length; i++) {
