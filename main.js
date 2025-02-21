@@ -65,16 +65,25 @@ const teams = [
 for (let i = 0; i < teams.length; i++) {
     teams[i].points = Math.floor(Math.random() * 10) + 1;
     teams[i].fouls = Math.floor(Math.random() * 10) + 1;
-    console.log(teams[i].points);
-    console.log(teams[i].fouls);
-
-    
 }
-const namesFouls = [];
-for (let i = 0; i < teams.length; i++) {
-    let foul = teams[i].fouls;
-    let names = teams[i].name;
-    namesFouls.push(foul, names)
+console.log(teams);
+
+const namesFouls = [
+    {
+        name:'Inter',
+        fouls: 0        
+    },
+    {
+        name:'Milan',
+        fouls: 0        
+    },
+    {
+        name:'Roma',
+        fouls: 0        
+    },
+]
+for (let i = 0; i < namesFouls.length; i++) {
+    namesFouls[i].fouls = Math.floor(Math.random() * 10) + 1;
 }
 console.log(namesFouls);
 
