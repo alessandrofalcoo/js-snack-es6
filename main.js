@@ -3,14 +3,20 @@ Creare un array di oggetti: Ogni oggetto descriverà una bici da corsa con le se
 Stampare a schermo la bici con peso minore.  */
 
 
-
-
-
-
-
-
-
-
+const bikes = [
+    {
+        name: 'Bitwin',
+        weight: 10
+    },
+    {
+        name: 'Specialized',
+        weight: 4
+    },
+    {
+        name: 'Canyon Ultimate',
+        weight: 6
+    },
+]
 
 
 
