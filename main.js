@@ -2,7 +2,7 @@
 Creare un array di oggetti: Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
 Stampare a schermo la bici con peso minore.  */
 
-
+// Creare una variabile bikes che contenga un array di oggetti con le varie bici elencate e le loro proprietà
 const bikes = [
     {
         name: 'Bitwin',
@@ -18,11 +18,18 @@ const bikes = [
     },
 ]
 
-let lighterBike;
+// Creare una array che contenga la bici più leggera
+let lighterBike = [];
+
+// Controllare i vari pesi e pushare nella variabile ligtherBike la bici col peso minore
 for (let i = 0; i < bikes.length; i++) {
-    const thisBike = bikes[i];
-    
+    const thisBike = bikes[i]
+    if (thisBike.weight < 5) {
+        lighterBike.push(thisBike.weight)
+    }
 }
+lighterBike = lighterBike.toString()
+console.log(lighterBike);
 
 
 
